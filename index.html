@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="websitelogo1.ico" type="image/x-icon">
+
+</head>
+
+<body class="flex" style="height: 90vh;">
+  <div class="wrapper">
+    <div class="quiz-container">
+      <div class="quiz-head">
+
+        <div class="Heading">   
+          <h1>
+            Quiz Time!
+          </h1>
+
+        </div>
+        <!--Quiz Score   -->
+        <div class="quiz-score flex" style="position: relative; top: 20px;">
+          <span id="correct-score"></span>/<span id="total-question"></span>
+        </div>
+      </div>
+
+
+      <!-- category option  -->
+      <div class="quiz-body">
+        <div class="search-bar" style="margin-bottom: 50px;">
+          <label for="category-select"><span class="search-text" style="font: bold;">Select a category: </span></label>
+          <select id="category-select">
+            <option value="">Any Category</option>
+            <option value="9">General Knowledge</option>
+            <option value="21">Sports</option>
+            <option value="25">Art</option>
+            <option value="27">Animals</option>
+            <option value="23">History</option>
+            <option value="10">Entertainment: Books</option>
+            <option value="11">Entertainment: Film</option>
+            <option value="15">Entertainment: Video Games</option>
+            <option value="16">Entertainment: Board Games</option>
+            <option value="17">Science & Nature</option>
+            <option value="18">Science: Computers</option>
+            <option value="19">Science: Mathematics</option>
+            <option value="20">Mythology</option>
+            <option value="22">Geography</option>
+            <option value="24">Politics</option>
+            <option value="26">Celebrities</option>
+            <option value="28">Vehicles</option>
+            <option value="30">Science: Gadgets</option>
+          </select>
+          <button onclick="startQuiz()" class="button_slide slide_left">Start Quiz</button>
+        </div>
+
+          <!-- quiz question -->
+
+          
+        <h2 class="quiz-question" id="question"></h2>
+        <ul class="quiz-options">
+        </ul>
+        <div id="result"></div>
+      </div>
+      <div class="quiz-foot">
+        <!-- Display the "Next Question" button instead of "Check Answer" -->
+        <button type="button" id="next-question">Next Question</button>
+        <button type="button" id="play-again">Play Again!</button>
+      </div>
+      <!-- Display the page number -->
+      <div id="page-number"></div>
+    </div>
+  </div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
