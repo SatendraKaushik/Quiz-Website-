@@ -44,6 +44,7 @@ body {
     box-shadow: 0 4px 6px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 10%);
 }
 
+
 .quiz-title {
     text-align: center;
     font-size: 2rem;
@@ -176,7 +177,7 @@ body {
     .wrapper {
         margin: 3rem 0;
         width: 90%;
-        height: 90%;
+        height: 100%;
         padding: 1.5rem 1rem 3rem 1rem;
         border-top-left-radius: 0;
         border-bottom-right-radius: 0;
