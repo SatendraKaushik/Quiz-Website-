@@ -34,7 +34,7 @@ body {
 }
 
 .wrapper {
-    background: var(--light-color);
+/*     background: var(--light-color); */
     padding: 1.5rem 4em 3rem 4rem;
     width: 100%;
     border-top-left-radius: 1.5rem;
